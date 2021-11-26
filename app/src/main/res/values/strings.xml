@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">myapplication_tourin</string>
+    <string name="sitios">Sitios</string>
+    <string name="todo">TODO</string>
 </resources>
