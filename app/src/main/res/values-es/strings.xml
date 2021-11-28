@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tourin App</string>
+    <string name="monserrate">Monserrate</string>
+    <string name="nombre">Monserrate</string>
+    <string name="descripcion">"Ciudad: Bogota D.C, Colombia Temperatura Promedio: 8C Lugares recomendados: Santuario, sendero, teleferico, fonicular y restaurantes como “Casa San Isidro”.  "</string>
+    <string name="description">"Llamada despues de su homonimo en catalan, Montserrat, Monserrate es una alta montana de unos 10,000 pies de altura que se encuentra en el centro de la ciudad de Bogotá, la capital de Colombia. Tiene 3,152 metros (10,341 pies) sobre el nivel del mar, donde hay una iglesia (construida en el sigo XVII) con una capilla en honor a El Señor Caído. Ademas de la iglesia, Monserrate cuenta con restaurantes, cafeterias, tiendas de souvenirs y muchos pequenos espacios para turistas.  "</string>
+    <string name="monserratename">Monserrate, Bogota D.C | Temperature: 8C</string>
+
+</resources>
