@@ -9,4 +9,6 @@
     <string name="monserrate_brief1">Monserrate (named after Catalan homonym mountain Montserrat) is a high mountain over 10,000 feet high that dominates the city center of Bogotá, the capital city of Colombia</string>
     <string name="monserrate_stars">Monserrate |  5 stars</string>
     <string name="grade">5 stars</string>
+    <string name="location_text_view">Bogota D.C</string>
+    <string name="Temperature">Temperature: 8 C</string>
 </resources>

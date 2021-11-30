@@ -1,9 +1,14 @@
-package com.developers.myapplication_tourin
+package com.developers.myapplication_tourin.list
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.developers.myapplication_tourin.R
+import com.developers.myapplication_tourin.detalle.DetalleActivity
+import com.developers.myapplication_tourin.model.Poi
+import com.developers.myapplication_tourin.model.PoiItem
 import com.google.gson.Gson
 
 class ListPoiActivity : AppCompatActivity() {
@@ -20,7 +25,7 @@ class ListPoiActivity : AppCompatActivity() {
 
         //listPoi = createMockPoi()
         listPoi = loadMockPoiFromJson()
-        poiAdapter = PoiAdapter(listPoi)
+        poiAdapter = PoiAdapter(listPoi, onItemClicked = {onPoiClicked(it) })
 
         poiRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -28,6 +33,16 @@ class ListPoiActivity : AppCompatActivity() {
             setHasFixedSize(false)
         }
     }
+
+    private fun onPoiClicked(poi: PoiItem) {
+        val intent = Intent(this, DetalleActivity::class.java)
+        intent.putExtra("poi", poi)
+        startActivity(intent)
+
+
+
+    }
+
 
     private fun loadMockPoiFromJson(): ArrayList<PoiItem>{
         val poiString: String = applicationContext.assets.open("poi.json").bufferedReader().use { it.readText()}

@@ -3,7 +3,7 @@
     "name" : "Monserrate",
     "location" : "Bogota D.C",
     "grade" : "5 stars",
-    "temperature_C" : "8",
+    "temperature_C" : "Temperature(C):8",
     "summary" : "Monserrate is a high mountain over 10,000 ft that dominates the city center of Bogotá",
     "description" : "Monserrate (named after Catalan homonym mountain Montserrat) is a high mountain over 10,000 feet high that dominates the city center of Bogotá, the capital city of Colombia. It rises to 3,152 meters (10,341 ft) above the sea level",
     "urlPicture" : "https://www.eltiempo.com/files/article_main/uploads/2019/04/19/5cba5f5bb4807.jpeg"
@@ -12,7 +12,7 @@
     "name" : "Plaza de Bolivar",
     "location" : "Bogota D.C",
     "grade" : "4 stars",
-    "temperature_C" : "12",
+    "temperature_C" : "Temperature(C):12",
     "summary" : "Plaza de Bolivar is the main square of the Colombian capital Bogotá",
     "description" : "The main square of the Colombian capital Bogotá. The square, previously called Plaza Mayor until 1821 and Plaza de la Constitución, is located in the heart of the historical area of the city. The square is surrounded by historical buildings; the Palace of Justice is located on the northern edge and the National Capitol borders the square in the south. The Primary Cathedral of Bogotá, next to the Archiepiscopal Palace with the monumental door cast by Ferdinando Marinelli Artistic Foundry and the Lievano Palace, seat of the mayor of Bogotá, are situated on the eastern and western side respectively.",
     "urlPicture" : "https://www.gpsmycity.com/img/gd_attr/34282.jpg"
@@ -22,7 +22,7 @@
     "name" : "Museo de Botero",
     "location" : "Bogota D.C",
     "grade" : "4 stars",
-    "temperature_C" : "12",
+    "temperature_C" : "Temperature(C): 12",
     "summary" : "The Botero Museum also known as Museo Botero is a museum located in Bogotá, Colombia",
     "description" : "The Botero Museum also known as Museo Botero is a museum located in Bogotá, Colombia. It houses one of Latin America's most important international art collections. It sees 500,000 visitors annually, around 1,000 daily, and of those 2,000 students per month. Being in La Candelaria neighborhood of Bogotá, the museum is in close proximity to other important landmarks like the Luis Ángel Arango Library and the Gold Museum of Bogotá",
     "urlPicture" : "https://media-cdn.tripadvisor.com/media/photo-s/05/44/de/f9/museo-di-botero.jpg"

@@ -1,16 +1,18 @@
-package com.developers.myapplication_tourin
+package com.developers.myapplication_tourin.list
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.developers.myapplication_tourin.R
+import com.developers.myapplication_tourin.model.PoiItem
 import com.squareup.picasso.Picasso
 
 class PoiAdapter(
-    private val Poilist: ArrayList<PoiItem>
+    private val Poilist: ArrayList<PoiItem>,
+    private val onItemClicked: (PoiItem) -> Unit,
 ) : RecyclerView.Adapter<PoiAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -20,6 +22,7 @@ class PoiAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val poi = Poilist[position]
+        holder.itemView.setOnClickListener { onItemClicked (Poilist[position])}
         holder.bind(poi)
     }
 
@@ -28,7 +31,7 @@ class PoiAdapter(
     class ViewHolder(itemview: View) : RecyclerView.ViewHolder(itemview){
         private var nameTextView: TextView = itemview.findViewById(R.id.name_text_view)
         private var gradeTextView: TextView = itemview.findViewById(R.id.grade_text_view)
-        private var briefTextView: TextView = itemview.findViewById(R.id.brief_text_view)
+        private var briefTextView: TextView = itemview.findViewById(R.id.description_text_view)
         private var pictureImageView: ImageView = itemview.findViewById(R.id.picture_image_view)
 
         fun bind(poi: PoiItem){

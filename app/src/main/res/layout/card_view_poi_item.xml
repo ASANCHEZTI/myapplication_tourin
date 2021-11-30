@@ -62,7 +62,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/brief_text_view"
+                android:id="@+id/description_text_view"
                 android:layout_width="250dp"
                 android:layout_height="62dp"
                 android:layout_marginStart="4dp"
@@ -83,7 +83,7 @@
                 android:textColor="#F53435"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/brief_text_view"
+                app:layout_constraintBottom_toTopOf="@+id/description_text_view"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.659"
                 app:layout_constraintStart_toEndOf="@+id/name_text_view" />

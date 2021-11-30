@@ -1,7 +1,8 @@
-package com.developers.myapplication_tourin
+package com.developers.myapplication_tourin.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class PoiItem(
     @SerializedName("description")
@@ -18,4 +19,4 @@ data class PoiItem(
     val temperatureC: String,
     @SerializedName("urlPicture")
     val urlPicture: String
-)
+) : Serializable
