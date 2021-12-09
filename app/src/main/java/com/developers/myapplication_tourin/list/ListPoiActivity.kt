@@ -40,9 +40,7 @@ class ListPoiActivity : AppCompatActivity() {
         startActivity(intent)
 
 
-
     }
-
 
     private fun loadMockPoiFromJson(): ArrayList<PoiItem>{
         val poiString: String = applicationContext.assets.open("poi.json").bufferedReader().use { it.readText()}
