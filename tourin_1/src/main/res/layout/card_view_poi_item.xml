@@ -39,7 +39,6 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/description_text_view"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.809"
                 app:layout_constraintStart_toEndOf="@+id/name_text_view" />
 
             <TextView
@@ -57,8 +56,8 @@
 
             <TextView
                 android:id="@+id/name_text_view"
-                android:layout_width="79dp"
-                android:layout_height="22dp"
+                android:layout_width="136dp"
+                android:layout_height="23dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/monserrate"
                 android:textAlignment="center"
