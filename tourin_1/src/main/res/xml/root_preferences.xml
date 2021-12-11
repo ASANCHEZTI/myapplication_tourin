@@ -12,11 +12,11 @@
             android:icon="@drawable/ic_notifications"/>
         <CheckBoxPreference
             android:defaultValue="false"
-            android:dependency="=notifications"
+            android:dependency="notifications"
             android:key="sound_notification"
             android:title="Turn on sound notifications"
             android:icon="@drawable/ic_soundnotification"/>
 
     </PreferenceCategory>
 
-</PreferenceScreen>                                   //validar si puedo colocar en vez de @arrays/reply_entries, colocar val.array.reply_entries
+</PreferenceScreen>

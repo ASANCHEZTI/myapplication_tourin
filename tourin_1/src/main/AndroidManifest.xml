@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.developers.tourin_1">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,12 +18,6 @@
             android:label="@string/title_activity_bottom">
         </activity>
 
-        <activity
-            android:name=".drawer.DrawerActivity"
-            android:exported="true"
-            android:label="DrawerActivity"
-            android:theme="@style/Theme.Myapplication_tourin.NoActionBar">
-        </activity>
         <activity
             android:name=".main.MainActivity"
             android:exported="true">
