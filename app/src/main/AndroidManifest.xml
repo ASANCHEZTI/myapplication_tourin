@@ -9,7 +9,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Tourin"
-        android:roundIcon="@mipmap/ic_launcher_tourin_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myapplication_tourin">
         <activity
