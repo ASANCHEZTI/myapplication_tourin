@@ -1,4 +1,4 @@
-package com.developers.tourin_1.bottom
+package com.developers.tourin_1.ui.bottom
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

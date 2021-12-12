@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_list"
-        android:name="com.developers.tourin_1.list.ListFragment"
+        android:name="com.developers.tourin_1.ui.list.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
@@ -19,15 +19,23 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.developers.tourin_1.detail.DetailFragment"
+        android:name="com.developers.tourin_1.ui.detail.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="poi"
             app:argType="com.developers.tourin_1.model.PoiItem" />
+        <action
+            android:id="@+id/action_navigation_detail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_preference"
-        android:name="com.developers.tourin_1.preference.SettingsFragment"
+        android:name="com.developers.tourin_1.ui.preference.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.developers.tourin_1.ui.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

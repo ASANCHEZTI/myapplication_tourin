@@ -1,4 +1,4 @@
-package com.developers.tourin_1.list
+package com.developers.tourin_1.ui.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.developers.tourin_1.data.PoiRepository
 import com.developers.tourin_1.databinding.FragmentListBinding
-import com.developers.tourin_1.main.MainActivity
+import com.developers.tourin_1.ui.main.MainActivity
 import com.developers.tourin_1.model.Poi
 import com.developers.tourin_1.model.PoiItem
 import com.google.gson.Gson
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class ListFragment : Fragment() {
 
@@ -45,6 +49,9 @@ class ListFragment : Fragment() {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment2(poi = poi))
 
     }
+
+
+
 
     private fun loadMockPoiFromJson(): ArrayList<PoiItem> {
         val poiString: String = context?.assets?.open("poi.json")?.bufferedReader().use { it!!.readText()}

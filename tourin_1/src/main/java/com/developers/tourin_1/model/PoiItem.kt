@@ -18,5 +18,9 @@ data class PoiItem(
     @SerializedName("temperature_C")
     val temperatureC: String,
     @SerializedName("urlPicture")
-    val urlPicture: String
+    val urlPicture: String,
+    @SerializedName("latitude")
+    val latitude: String,
+    @SerializedName("longitude")
+    val longitude: String,
 ) : Serializable

@@ -1,4 +1,4 @@
-package com.developers.tourin_1.main
+package com.developers.tourin_1.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.developers.tourin_1.R
-import com.developers.tourin_1.preference.SettingsFragment
+import com.developers.tourin_1.ui.preference.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

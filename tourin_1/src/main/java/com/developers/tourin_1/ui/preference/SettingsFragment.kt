@@ -1,11 +1,11 @@
-package com.developers.tourin_1.preference
+package com.developers.tourin_1.ui.preference
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import androidx.preference.PreferenceFragmentCompat
 import com.developers.tourin_1.R
-import com.developers.tourin_1.main.MainActivity
+import com.developers.tourin_1.ui.main.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

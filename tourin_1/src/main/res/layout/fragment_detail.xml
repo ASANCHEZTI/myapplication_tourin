@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".detalle.DetalleActivity">
 
 
@@ -22,7 +22,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/logo_tourin" />
+            app:srcCompat="@drawable/logo_tourin"
+            android:contentDescription="@null" />
 
         <ImageView
             android:id="@+id/picture_image_view"
@@ -34,7 +35,8 @@
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logo_image_view"
-            app:srcCompat="@drawable/monserrate2" />
+            app:srcCompat="@drawable/monserrate2"
+            android:contentDescription="@null" />
 
         <TextView
             android:id="@+id/name_text_view"
@@ -85,11 +87,11 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="-1dp" />
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="-1dp" />
 
         <TextView
             android:id="@+id/location_text_view"
@@ -118,6 +120,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.802"
             app:layout_constraintStart_toEndOf="@+id/grade_text_view" />
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="188dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.983"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperature_text_view"
+            app:srcCompat="@drawable/ic_map"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -1,4 +1,4 @@
-package com.developers.tourin_1.detail
+package com.developers.tourin_1.ui.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.developers.tourin_1.databinding.FragmentDetailBinding
-import com.developers.tourin_1.main.MainActivity
-import com.squareup.picasso.Picasso
+import com.developers.tourin_1.ui.main.MainActivity
+import androidx.navigation.fragment.findNavController
 
 
 class DetailFragment : Fragment() {
@@ -42,6 +42,10 @@ class DetailFragment : Fragment() {
             temperatureTextView.text = poi.temperatureC
             descriptionTextView.text = poi.description
             com.squareup.picasso.Picasso.get().load(poi.urlPicture).into(pictureImageView)
+
+            mapButton.setOnClickListener {
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+            }
         }
 
     }

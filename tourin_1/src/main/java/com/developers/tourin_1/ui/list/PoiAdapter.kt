@@ -1,4 +1,4 @@
-package com.developers.tourin_1.list
+package com.developers.tourin_1.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
